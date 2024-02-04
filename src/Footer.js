@@ -12,7 +12,7 @@ const Footer = () => <footer className="footer">
             <hr/>
 
             <div className="footer black">
-                <ul>
+                <ul className="introduce">
                     <li><a className="introduce" href="https://www.chanel.com/ru/haute-couture/">Shop</a></li>
                     <li><a className="introduce" href="https://www.chanel.com/ru/about-chanel/the-founder/">About founder</a></li>
                     <li><a className="introduce" href="https://www.chanel.com/ru/">Contact</a></li>
@@ -22,7 +22,7 @@ const Footer = () => <footer className="footer">
             </div>
 
             <div>© 2024 Copyright:
-        <a className="end" href="https://www.chanel.com/ru/"> Chanel.com</a>
+        <a className="end" href="https://www.chanel.com/ru/"> CHANEL.com</a>
     </div>
         
     </div>

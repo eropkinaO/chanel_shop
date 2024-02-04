@@ -2,7 +2,7 @@ export const dataSlides = [
      {
         id: 1,
         title: "“MAY MY LEGEND PROSPER AND THRIVE. I WISH IT A LONG AND HAPPY LIFE!",
-        description: "Gabrielle Chanel lived her life as she alone intended. The trials of a childhood as an orphan and the successes of an accomplished businesswoman gave birth to an extraordinary character; daring, free, and ahead of her time. Faithful friendships and passionate love affairs, as well as a thirst for culture, discovery and travel helped shaped her personality. A wardrobe freed from constraints and superfluity, tweaked with masculine accents, created a visionary allure that has become timeless and yet wildly modern. Pearls and diamonds casually paired with iconic perfumes have created a signature style... That of an avant-garde woman, a pioneer whose lifestyle and multiple facets forged the values of the House she founded, and who remains an inspiration for all women.",
+        description: "Gabrielle Chanel lived her life as she alone intended. The trials of a childhood as an orphan and the successes of an accomplished businesswoman gave birth to an extraordinary character; daring, free, and ahead of her time. Faithful friendships and passionate love affairs, as well as a thirst for culture, discovery and travel helped shaped her personality. A wardrobe freed from constraints and superfluity, tweaked with masculine accents, created a visionary allure that has become timeless and yet wildly modern.",
         image: "https://puls-img.chanel.com/c_limit,w_1920/q_auto:good,f_auto,dpr_1.1/1637588385997-1593781302517aboutchanelfounderherogabriellechaneldjpgmaxlglgjpeg_1444x1752_max_lg_lg.jpg"
      },
 
