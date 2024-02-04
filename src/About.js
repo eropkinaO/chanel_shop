@@ -6,6 +6,7 @@ function About(){
     
     const [slide, setSlide] = useState(0);
     const {title, description, image} = dataSlides[slide];
+  
     
     const previousSlide = () => {
         setSlide((slide) => {
@@ -27,18 +28,18 @@ function About(){
         })
     }
     
-    
+  
     return(<div className='content'>
-        <div className='slides'>
-        <h2>{title}</h2>
+        <div className='slides text'>
+        <h2 className='title'>{title}</h2>
         </div>
 
         <div className='slides'>
-        <img src={image} width="500px" alt="slide"/>
+        <img className="aboutImage"  src={image} width="500px" alt="slide"/>
         </div>
         
         <div className='slides text'>
-            <p>{description}</p>
+            <p className='par'>{description}</p>
             </div>
 
             <div className='slides'>

@@ -34,7 +34,7 @@ function Contact(){
         </div>
 
         <div className='slides'>
-        <img src={image} width="500px" alt="slide"/>
+        <img className="aboutImage" src={image} width="500px" alt="slide"/>
         </div>
         
         <div className='slides text'>
