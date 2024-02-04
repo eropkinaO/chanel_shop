@@ -2,6 +2,7 @@
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { getCartItems, getTotalPrice } from "../redux/cartSlice";
+import Swal from "sweetalert2";
 
 
 const Cart = () => {
@@ -9,14 +10,28 @@ const Cart = () => {
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
 
+    const checkoutAlert = () => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          background: "#EEDAD1bjio",
+          text: "Thank you for choosing our online store! Here must be form for payment, but it is not a real store.",
+          footer: '<a href="https://www.chanel.com/#">If you want to buy Chanel products, click HERE!</a>'
+        });
+      }
+
     return(
         <div>
-            <img className="cartIcon" src={"https://media.istockphoto.com/id/928418914/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B0%D0%BA-%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B0%D0%BA-%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D0%B0%D0%BA%D0%B0.jpg?s=2048x2048&w=is&k=20&c=hurRmksCBHN0LiwOePe9H7LtBaXcFK658d5taC7csFA="}/>
-           <h3>TOTAL: ${totalPrice}</h3>
-             {cartItems.map((cartItem, index) => <CartItem key={index} cartItem={cartItem}/>)} 
-        </div>
-    )
-}
+        <ol className="list">
+            
+             {cartItems.map((cartItem, index) => <li><CartItem key={index} cartItem={cartItem}/></li>)} 
+             <h3>TOTAL: ${totalPrice}</h3>
+             </ol>
+               <div className="check">
+               <button className="checkout" onClick={() => checkoutAlert()}>CHECKOUT</button>
+               </div>
+               </div>
+    )}
 
 
 export default Cart;

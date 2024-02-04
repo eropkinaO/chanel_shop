@@ -1,6 +1,6 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import chanels from "../Components/ChanelComponents/Chanels";
+import chanels from "./chanelSlice";
 import cart from './cartSlice';
 
 export const store = configureStore({

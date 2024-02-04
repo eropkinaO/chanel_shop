@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+1. Project's title.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The title of this project - "Online store Chanel".
 
-## Available Scripts
+2. Project Description.
 
-In the project directory, you can run:
+2.1. MOTIVATION
+ My motivation for this project consists in importance of online-stores.
+And such brand as Chanel includes different categories of products, which we can display for student's frontend developer's project.
+Also attractive photos of Chanel's product are useful for beautyful design of the project.
 
-### `npm start`
+2.2. TECHNOLOGIES
+The project was complicated by using React 18.2.0.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigation between components was acheived through react-router-dom 6.21.3.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For using "footer" in the project was used such library of CSS-patterns, as Bootstrap 4.3.1 and React Bootstrap 2.10.0.
 
-### `npm test`
+The opportunity of using cart, count products, adding products to cart, summing total price and removing products from cart became real through React Redux 9.1.0. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As UI example was used Sweetalert2 11.10.4.
 
-### `npm run build`
+2.3. CHALLENGES AND PROBLEMS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+At work of the project I faced to next problems:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- errors with imports during work with Redux;
+- on the page "Shop" of the online-store of this project firstly you can see products from category "Fragnance",
+because this category was selected as state in slice of Redux. It was made for selection categories.
+- problems with CSS using footer by Bootstrap for React;
+- impossible to make CSS of sweet alert more adaptive for projects design;
+- problems with counting products without using Redux;
+- errors with functionality Redux;
+- problems with CSS for the best design;
+- impossibility to make the project real, for example using user's accounts and order's checkout 
+through lack of some knowledges.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+So my main challenge is to work more with Redux, CSS and to continue get new information to become good frontend developer.
 
-### `npm run eject`
+3. Table of Contents.
+This application of my project consist of 5 pages: "First page", "About", "Shop", "Contacts", "Product cart" (is displayed as icon in navbar).
+Te project includes 19 components, in which information is passed by "props" and importing components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. How to Install and Run my project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For starting my project instal this commands in your command line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- npm i react-router-dom;
+- npm i redux;
+- npm i @reduxjs/toolkit;
+- npm install react-bootstrap bootstrap.
+ 
+ For running the project you will need in command "npm start".
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ 5. How to Use the Project.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ You can use the project as online-store without checkout and making an order.

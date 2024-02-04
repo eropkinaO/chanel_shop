@@ -3,11 +3,25 @@ import { useState } from "react";
 import ChangeQuantity from "../../Cart/ChangeQuantity";
 import { addItemToCart } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
+import Swal from "sweetalert2";
+
 
 const Chanel = ({chanel}) => {
  
     const [quantity, setQuantity] = useState(1);
      const dispatch = useDispatch();
+
+     const handleAlert = () => {
+        Swal.fire({
+            title: "Your item(s) added to cart",
+            icon: "success"
+          });
+     }
+
+      const addingItem = () => {
+        dispatch(addItemToCart({chanel, quantity}))
+      }
+
 
     return(
         
@@ -23,18 +37,17 @@ const Chanel = ({chanel}) => {
             </div>
             
             <div className="cont">
-                <img className="carted"  src={`./${chanel.image}.jpg`}/>    
+                <img className="carted"  src={`./${chanel.image}.jpg`} alt="carted"/>    
             </div>
             <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
 
             <div className="cont">
-            <button className="adding" onClick={() => {dispatch(addItemToCart({chanel, quantity}))}}>Add to cart</button>
+            <button className="adding" onClick={() => {addingItem(); handleAlert()}}>Add to cart</button>
             </div>
 
             </div>
         </div>
         
-    )
-}
+    )}
 
 export default Chanel;
