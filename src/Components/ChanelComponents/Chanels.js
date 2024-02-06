@@ -1,11 +1,19 @@
 import Chanel from "./Chanel";
 import ChanelsData from "../../Data/ChanelsData";
-import { useSelector } from "react-redux";
-import { getSelectedCategory } from "../../redux/chanelSlice";
+import React from "react";
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { filterCategory, getSelectedCategory } from "../../redux/chanelSlice";
 
 const Chanels = () => {
    
     const selectedCategory = useSelector(getSelectedCategory);
+    const dispatch = useDispatch();
+
+
+    useEffect = ( () => {
+      dispatch(filterCategory('ALL'))
+    }, [dispatch])
 
     return(
       

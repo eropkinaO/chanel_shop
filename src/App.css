@@ -209,7 +209,7 @@ width: 70%;
   background-color: #C7B7A3;
   width: auto;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
 }
 
 hr{
@@ -238,6 +238,28 @@ hr{
 .home{
   background-repeat: no-repeat;
 }
+
+.swal2-popup{
+  background-color: black;
+  opacity: 0.8;
+  width: 300px;
+  height: 360px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 40px;
+}
+
+.swal2-confirm{
+  background-color: #E8D5C4;
+  border:none;
+  color: #000000;
+}
+
+.swal2-footer{
+  color: white;
+}
+
 
 @media all and (max-width: 500px) {
  nav{
@@ -305,6 +327,11 @@ hr{
 .checkout{
   width: 110px;
   font-size: 13px;
+}
+
+.swal2-popup{
+  width: 250px;
+  height: 300px;
 }
 }
 

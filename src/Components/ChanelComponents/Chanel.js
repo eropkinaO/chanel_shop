@@ -14,7 +14,6 @@ const Chanel = ({chanel}) => {
      const handleAlert = () => {
         Swal.fire({
             title: "Your item(s) added to cart",
-            icon: "success"
           });
      }
 
@@ -48,6 +47,7 @@ const Chanel = ({chanel}) => {
             </div>
         </div>
         
-    )}
+    )
+}
 
 export default Chanel;

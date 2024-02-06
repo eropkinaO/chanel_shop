@@ -12,9 +12,6 @@ const Cart = () => {
 
     const checkoutAlert = () => {
         Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          background: "#EEDAD1bjio",
           text: "Thank you for choosing our online store! Here must be form for payment, but it is not a real store.",
           footer: '<a href="https://www.chanel.com/#">If you want to buy Chanel products, click HERE!</a>'
         });
