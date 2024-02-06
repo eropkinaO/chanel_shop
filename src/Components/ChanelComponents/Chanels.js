@@ -1,8 +1,8 @@
 import Chanel from "./Chanel";
 import ChanelsData from "../../Data/ChanelsData";
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { filterCategory, getSelectedCategory } from "../../redux/chanelSlice";
+import { useSelector} from "react-redux";
+import { getSelectedCategory } from "../../redux/chanelSlice";
 
 const Chanels = () => {
    
